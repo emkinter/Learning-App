@@ -17,6 +17,10 @@
 		43695DBD280107F9000DF300 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43695DBB280107F9000DF300 /* Test.swift */; };
 		43695DBF2801087E000DF300 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43695DBE2801087E000DF300 /* Question.swift */; };
 		43695DC02801087E000DF300 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43695DBE2801087E000DF300 /* Question.swift */; };
+		437235FB2804B6F100185ED5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437235FA2804B6F100185ED5 /* ContentView.swift */; };
+		437235FC2804B6F100185ED5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437235FA2804B6F100185ED5 /* ContentView.swift */; };
+		437235FE2804C92400185ED5 /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437235FD2804C92400185ED5 /* ContentViewRow.swift */; };
+		437235FF2804C92400185ED5 /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437235FD2804C92400185ED5 /* ContentViewRow.swift */; };
 		43B5B9C427FDD3610094CE7E /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B5B9B427FDD35E0094CE7E /* LearningApp.swift */; };
 		43B5B9C527FDD3610094CE7E /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B5B9B427FDD35E0094CE7E /* LearningApp.swift */; };
 		43B5B9C627FDD3610094CE7E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B5B9B527FDD35E0094CE7E /* HomeView.swift */; };
@@ -39,6 +43,8 @@
 		43695DB82801070E000DF300 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		43695DBB280107F9000DF300 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		43695DBE2801087E000DF300 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		437235FA2804B6F100185ED5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		437235FD2804C92400185ED5 /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
 		43B5B9B427FDD35E0094CE7E /* LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningApp.swift; sourceTree = "<group>"; };
 		43B5B9B527FDD35E0094CE7E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		43B5B9B627FDD3610094CE7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,6 +120,8 @@
 			children = (
 				43B5B9B527FDD35E0094CE7E /* HomeView.swift */,
 				43CC119E28046BED006300C2 /* HomeViewRow.swift */,
+				437235FA2804B6F100185ED5 /* ContentView.swift */,
+				437235FD2804C92400185ED5 /* ContentViewRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,12 +264,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				437235FE2804C92400185ED5 /* ContentViewRow.swift in Sources */,
 				43B5B9C627FDD3610094CE7E /* HomeView.swift in Sources */,
 				43CC119F28046BED006300C2 /* HomeViewRow.swift in Sources */,
 				43695DBF2801087E000DF300 /* Question.swift in Sources */,
 				43695DB3280105F8000DF300 /* Module.swift in Sources */,
 				43B5B9C427FDD3610094CE7E /* LearningApp.swift in Sources */,
 				43695DBC280107F9000DF300 /* Test.swift in Sources */,
+				437235FB2804B6F100185ED5 /* ContentView.swift in Sources */,
 				43695DB92801070E000DF300 /* Lesson.swift in Sources */,
 				43695DB628010667000DF300 /* Content.swift in Sources */,
 				43B5B9D827FDD6380094CE7E /* ContentModel.swift in Sources */,
@@ -272,12 +282,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				437235FF2804C92400185ED5 /* ContentViewRow.swift in Sources */,
 				43B5B9C727FDD3610094CE7E /* HomeView.swift in Sources */,
 				43CC11A028046BED006300C2 /* HomeViewRow.swift in Sources */,
 				43695DC02801087E000DF300 /* Question.swift in Sources */,
 				43695DB4280105F8000DF300 /* Module.swift in Sources */,
 				43B5B9C527FDD3610094CE7E /* LearningApp.swift in Sources */,
 				43695DBD280107F9000DF300 /* Test.swift in Sources */,
+				437235FC2804B6F100185ED5 /* ContentView.swift in Sources */,
 				43695DBA2801070E000DF300 /* Lesson.swift in Sources */,
 				43695DB728010667000DF300 /* Content.swift in Sources */,
 				43B5B9D927FDD6380094CE7E /* ContentModel.swift in Sources */,
