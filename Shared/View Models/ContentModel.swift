@@ -13,6 +13,9 @@ class ContentModel: ObservableObject {
     // Current module and current module index
     @Published var currentModule: Module?
     var currentModuleIndex = 0
+    // Current lesson and current lesson index
+    @Published var currentLesson: Lesson?
+    var currentLessonIndex = 0
     // Style Data
     var styleData: Data?
     
@@ -55,10 +58,9 @@ class ContentModel: ObservableObject {
             print("Could not parse style data")
         }
     }
-    
     // MARK: - Module navigation methods
-    func beginModule ( moduleId: Int) {
-        // Find the index for this module id
+    func beginModule( moduleId: Int) {
+        // Find the index for this moduleId
         for index in 0..<modules.count {
             if modules[index].id == moduleId {
                 currentModuleIndex = index
@@ -67,6 +69,35 @@ class ContentModel: ObservableObject {
         }
         // set the current module
         currentModule = modules[currentModuleIndex]
+    }
+    //MARK: - Lesson navifation methods
+    func beginLesson( lessonIndex: Int) {
+        // Check to make sure lesson indes is within range of module lessons
+        if lessonIndex < currentModule!.content.lessons.count {
+            currentLessonIndex = lessonIndex
+        }
+        else {
+            currentLessonIndex = 0
+        }
+        // set the current lesson
+        currentLesson = currentModule!.content.lessons[currentLessonIndex]
+    }
+    func nextLesson() {
+        // Advance currentLessonIndex
+        currentLessonIndex += 1
+        // Check that it is withing range
+        if currentLessonIndex < currentModule!.content.lessons.count {
+            // Set the current lesson property
+            currentLesson = currentModule!.content.lessons[currentLessonIndex]
+        }
+        else {
+            currentLesson = nil
+            currentLessonIndex = 0
+        }
+        
+    }
+    func hasNextLesson() -> Bool {
+        return (currentLessonIndex + 1 < currentModule!.content.lessons.count)
     }
     
 }
