@@ -29,6 +29,8 @@
 		43B5B9DD27FDDAB20094CE7E /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 43B5B9DA27FDDAB20094CE7E /* data.json */; };
 		43B5B9DE27FDDAB20094CE7E /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = 43B5B9DB27FDDAB20094CE7E /* style.html */; };
 		43B5B9DF27FDDAB20094CE7E /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = 43B5B9DB27FDDAB20094CE7E /* style.html */; };
+		43CC119F28046BED006300C2 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CC119E28046BED006300C2 /* HomeViewRow.swift */; };
+		43CC11A028046BED006300C2 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CC119E28046BED006300C2 /* HomeViewRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,7 @@
 		43B5B9D727FDD6380094CE7E /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		43B5B9DA27FDDAB20094CE7E /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		43B5B9DB27FDDAB20094CE7E /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
+		43CC119E28046BED006300C2 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				43B5B9B527FDD35E0094CE7E /* HomeView.swift */,
+				43CC119E28046BED006300C2 /* HomeViewRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -253,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43B5B9C627FDD3610094CE7E /* HomeView.swift in Sources */,
+				43CC119F28046BED006300C2 /* HomeViewRow.swift in Sources */,
 				43695DBF2801087E000DF300 /* Question.swift in Sources */,
 				43695DB3280105F8000DF300 /* Module.swift in Sources */,
 				43B5B9C427FDD3610094CE7E /* LearningApp.swift in Sources */,
@@ -268,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43B5B9C727FDD3610094CE7E /* HomeView.swift in Sources */,
+				43CC11A028046BED006300C2 /* HomeViewRow.swift in Sources */,
 				43695DC02801087E000DF300 /* Question.swift in Sources */,
 				43695DB4280105F8000DF300 /* Module.swift in Sources */,
 				43B5B9C527FDD3610094CE7E /* LearningApp.swift in Sources */,
