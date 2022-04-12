@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43248B652805B00800928F05 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43248B642805B00800928F05 /* CodeTextView.swift */; };
+		43248B662805B00800928F05 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43248B642805B00800928F05 /* CodeTextView.swift */; };
 		43695DB3280105F8000DF300 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43695DB2280105F8000DF300 /* Module.swift */; };
 		43695DB4280105F8000DF300 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43695DB2280105F8000DF300 /* Module.swift */; };
 		43695DB628010667000DF300 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43695DB528010667000DF300 /* Content.swift */; };
@@ -43,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43248B642805B00800928F05 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 		43695DB2280105F8000DF300 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		43695DB528010667000DF300 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		43695DB82801070E000DF300 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
@@ -141,6 +144,7 @@
 				437235FA2804B6F100185ED5 /* ContentView.swift */,
 				437235FD2804C92400185ED5 /* ContentViewRow.swift */,
 				437236002804D3CA00185ED5 /* ContentDetailView.swift */,
+				43248B642805B00800928F05 /* CodeTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -288,6 +292,7 @@
 				43B5B9C627FDD3610094CE7E /* HomeView.swift in Sources */,
 				43CC119F28046BED006300C2 /* HomeViewRow.swift in Sources */,
 				43695DBF2801087E000DF300 /* Question.swift in Sources */,
+				43248B652805B00800928F05 /* CodeTextView.swift in Sources */,
 				43695DB3280105F8000DF300 /* Module.swift in Sources */,
 				43B5B9C427FDD3610094CE7E /* LearningApp.swift in Sources */,
 				43695DBC280107F9000DF300 /* Test.swift in Sources */,
@@ -308,6 +313,7 @@
 				43B5B9C727FDD3610094CE7E /* HomeView.swift in Sources */,
 				43CC11A028046BED006300C2 /* HomeViewRow.swift in Sources */,
 				43695DC02801087E000DF300 /* Question.swift in Sources */,
+				43248B662805B00800928F05 /* CodeTextView.swift in Sources */,
 				43695DB4280105F8000DF300 /* Module.swift in Sources */,
 				43B5B9C527FDD3610094CE7E /* LearningApp.swift in Sources */,
 				43695DBD280107F9000DF300 /* Test.swift in Sources */,

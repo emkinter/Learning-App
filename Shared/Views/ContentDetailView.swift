@@ -22,7 +22,9 @@ struct ContentDetailView: View {
             else {
                 Text("Video Not Available.")
             }
-            // TODO: Description
+            // Description
+            CodeTextView()
+            
             // Show next lesson button if there is a next lesson
             if model.hasNextLesson() {
                 Button (action:{
@@ -44,6 +46,7 @@ struct ContentDetailView: View {
             }
         }
         .padding()
+        .navigationBarTitle(lesson?.title ?? "")
     }
 }
 
