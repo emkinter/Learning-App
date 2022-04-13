@@ -42,6 +42,8 @@
 		43B5B9DF27FDDAB20094CE7E /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = 43B5B9DB27FDDAB20094CE7E /* style.html */; };
 		43CC119F28046BED006300C2 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CC119E28046BED006300C2 /* HomeViewRow.swift */; };
 		43CC11A028046BED006300C2 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CC119E28046BED006300C2 /* HomeViewRow.swift */; };
+		43CC211928072D5100162629 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CC211828072D5100162629 /* RectangleCard.swift */; };
+		43CC211A28072D5100162629 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CC211828072D5100162629 /* RectangleCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,7 @@
 		43B5B9DA27FDDAB20094CE7E /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		43B5B9DB27FDDAB20094CE7E /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		43CC119E28046BED006300C2 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
+		43CC211828072D5100162629 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,7 @@
 				437235FD2804C92400185ED5 /* ContentViewRow.swift */,
 				437236002804D3CA00185ED5 /* ContentDetailView.swift */,
 				43248B642805B00800928F05 /* CodeTextView.swift */,
+				43CC211828072D5100162629 /* RectangleCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -291,6 +295,7 @@
 				437235FE2804C92400185ED5 /* ContentViewRow.swift in Sources */,
 				43B5B9C627FDD3610094CE7E /* HomeView.swift in Sources */,
 				43CC119F28046BED006300C2 /* HomeViewRow.swift in Sources */,
+				43CC211928072D5100162629 /* RectangleCard.swift in Sources */,
 				43695DBF2801087E000DF300 /* Question.swift in Sources */,
 				43248B652805B00800928F05 /* CodeTextView.swift in Sources */,
 				43695DB3280105F8000DF300 /* Module.swift in Sources */,
@@ -312,6 +317,7 @@
 				437235FF2804C92400185ED5 /* ContentViewRow.swift in Sources */,
 				43B5B9C727FDD3610094CE7E /* HomeView.swift in Sources */,
 				43CC11A028046BED006300C2 /* HomeViewRow.swift in Sources */,
+				43CC211A28072D5100162629 /* RectangleCard.swift in Sources */,
 				43695DC02801087E000DF300 /* Question.swift in Sources */,
 				43248B662805B00800928F05 /* CodeTextView.swift in Sources */,
 				43695DB4280105F8000DF300 /* Module.swift in Sources */,

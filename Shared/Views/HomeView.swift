@@ -22,10 +22,13 @@ struct HomeView: View {
                             ForEach(model.modules){ module in
                                 // MARK: Learning Card
                                 NavigationLink(
-                                    destination: ContentView()
+                                    destination:
+                                        ContentView()
                                         .onAppear(perform: {
                                             model.beginModule(moduleId: module.id)
                                         }),
+                                    tag: module.id,
+                                    selection: $model.currentContentSelected,
                                     label: {
                                         HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, count: "\(module.content.lessons.count) Lessons", time: module.content.time)
                                     })
