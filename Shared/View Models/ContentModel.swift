@@ -8,6 +8,7 @@
 import Foundation
 
 class ContentModel: ObservableObject {
+    // MARK: - Attributes
     // List of modules
     @Published var modules = [Module]()
     // Current module and current module index
@@ -16,17 +17,21 @@ class ContentModel: ObservableObject {
     // Current lesson and current lesson index
     @Published var currentLesson: Lesson?
     var currentLessonIndex = 0
-    // Current lesson explanation
-    @Published var lessonDescription = NSAttributedString()
+    // Current question
+    @Published var currentQuestion: Question?
+    // Current question index
+    var currentQuestionIndex = 0
+    // Current codeText
+    @Published var codeText = NSAttributedString()
     // Current selected content and test
     @Published var currentContentSelected: Int?
+    @Published var currentTestSelected: Int?
     // Style Data
     var styleData: Data?
-    
+    // MARK: - Class initialization Method
     init() {
         getLocalData()
     }
-    
     // MARK: - Data methods
     func getLocalData() {
         // Get a url to the JSON file
@@ -74,7 +79,7 @@ class ContentModel: ObservableObject {
         // set the current module
         currentModule = modules[currentModuleIndex]
     }
-    //MARK: - Lesson navifation methods
+    // MARK: - Lesson navigation methods
     func beginLesson( lessonIndex: Int) {
         // Check to make sure lesson indes is within range of module lessons
         if lessonIndex < currentModule!.content.lessons.count {
@@ -85,7 +90,7 @@ class ContentModel: ObservableObject {
         }
         // set the current lesson
         currentLesson = currentModule!.content.lessons[currentLessonIndex]
-        lessonDescription = addStyling(currentLesson!.explanation)
+        codeText = addStyling(currentLesson!.explanation)
     }
     func nextLesson() {
         // Advance currentLessonIndex
@@ -94,7 +99,7 @@ class ContentModel: ObservableObject {
         if currentLessonIndex < currentModule!.content.lessons.count {
             // Set the current lesson property
             currentLesson = currentModule!.content.lessons[currentLessonIndex]
-            lessonDescription = addStyling(currentLesson!.explanation)
+            codeText = addStyling(currentLesson!.explanation)
         }
         else {
             currentLesson = nil
@@ -105,7 +110,25 @@ class ContentModel: ObservableObject {
     func hasNextLesson() -> Bool {
         return (currentLessonIndex + 1 < currentModule!.content.lessons.count)
     }
-    //MARK: - Code Styling
+    // MARK: - Question navigation methods
+    func beginTest( moduleId: Int) {
+        // Set the current module
+        beginModule(moduleId: moduleId)
+        // Set the current question
+        currentModuleIndex = 0
+        // If there are questions, set the current question to the first one
+        if currentModule?.test.questions.count ?? 0 > 0 {
+            currentQuestion = currentModule!.test.questions[currentQuestionIndex]
+            codeText = addStyling(currentQuestion!.content)
+        }
+    }
+    func nextQuestion() {
+        
+    }
+    func hasNextQuestion() -> Bool {
+        return (currentQuestionIndex + 1 < currentModule!.test.questions.count)
+    }
+    // MARK: - Code Styling
     private func addStyling(_ htmlString: String) -> NSAttributedString {
         var resultString = NSAttributedString()
         var data = Data()
