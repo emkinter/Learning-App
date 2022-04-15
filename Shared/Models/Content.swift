@@ -6,10 +6,13 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Content: Decodable, Identifiable {
     var id: Int
     var image: String
+    var forgroundColor: String
+    var backgroundColor: String
     var time: String
     var description: String
     var lessons: [Lesson]

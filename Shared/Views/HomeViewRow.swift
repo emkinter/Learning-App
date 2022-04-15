@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeViewRow: View {
     var image: String
+    var forgroundColor: String
+    var backgroundColor: String
     var title: String
     var description: String
     var count: String
@@ -22,10 +24,11 @@ struct HomeViewRow: View {
                 .aspectRatio(CGSize(width: 335, height: 175), contentMode: .fit)
             HStack {
                 // Image
-                Image(image)
+                Image(systemName: image)
                     .resizable()
-                    .frame(width: 116, height: 116)
-                    .clipShape(Circle())
+                    .frame(width: 100, height: 100)
+                    .foregroundColor(Color(forgroundColor))
+                    .background(Color(backgroundColor))
                 Spacer()
                 // Text
                 VStack(alignment: .leading, spacing: 10) {
@@ -62,6 +65,6 @@ struct HomeViewRow: View {
 
 struct HomeViewRow_Previews: PreviewProvider {
     static var previews: some View {
-        HomeViewRow(image: "swift", title: "Learn Swift", description: "some description", count: "10 lesson", time: "3 hours")
+        HomeViewRow(image: "swift", forgroundColor: "Color.gray", backgroundColor: "Color.black", title: "Learn Swift", description: "some description", count: "10 lesson", time: "3 hours")
     }
 }

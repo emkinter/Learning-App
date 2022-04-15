@@ -5,6 +5,8 @@
         "content": {
             "id": 0,
             "image": "swift",
+            "forgroundColor": "Color.white",
+            "backgroundColor": "Color.orange",
             "time": "3 hours",
             "description": "Understand the fundamentals of the Swift programming language.",
             "lessons": [
@@ -82,7 +84,9 @@
         },
         "test": {
             "id": 0,
-            "image": "testSwift",
+            "image": "swift",
+            "forgroundColor": "Color.orange",
+            "backgroundColor": "Color.white",
             "time": "30 minutes",
             "description": "Gear up and put your Swift knowledge to the test.",
             "questions": [

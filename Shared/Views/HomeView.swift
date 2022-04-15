@@ -30,7 +30,10 @@ struct HomeView: View {
                                     tag: module.id,
                                     selection: $model.currentContentSelected)
                                 {
-                                    HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, count: "\(module.content.lessons.count) Lessons", time: module.content.time)
+                                    HomeViewRow(image: module.content.image,
+                                                forgroundColor: module.content.forgroundColor,
+                                                backgroundColor: module.content.backgroundColor,
+                                                title: "Learn \(module.category)", description: module.content.description, count: "\(module.content.lessons.count) Lessons", time: module.content.time)
                                 }
                                 // MARK: Test Card
                                 NavigationLink(destination:
@@ -40,7 +43,13 @@ struct HomeView: View {
                                                tag: module.id,
                                                selection: $model.currentTestSelected)
                                 {
-                                    HomeViewRow(image: module.test.image, title: "\(module.category) Test", description: module.test.description, count: "\(module.test.questions.count) Questions", time: module.test.time)
+                                    HomeViewRow(image: module.test.image,
+                                                forgroundColor: module.test.forgroundColor,
+                                                backgroundColor: module.test.backgroundColor,
+                                                title: "\(module.category) Test",
+                                                description: module.test.description,
+                                                count: "\(module.test.questions.count) Questions",
+                                                time: module.test.time)
                                 }
                                 
                             }

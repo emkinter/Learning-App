@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "swiftUI.png",
+      "filename" : "9CADF25B-BCBF-49E0-86D8-C6FABF932951_1_201_a-2.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "9CADF25B-BCBF-49E0-86D8-C6FABF932951_1_201_a-1.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "9CADF25B-BCBF-49E0-86D8-C6FABF932951_1_201_a.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }

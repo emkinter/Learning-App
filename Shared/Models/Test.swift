@@ -10,6 +10,8 @@ import Foundation
 struct Test: Decodable, Identifiable {
     var id: Int
     var image: String
+    var forgroundColor: String
+    var backgroundColor: String
     var time: String
     var description: String
     var questions: [Question]
