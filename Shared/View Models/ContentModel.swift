@@ -72,7 +72,7 @@ class ContentModel: ObservableObject {
     }
     func getRemoteData() {
         // String path
-        let urlString = "https://emkinter.github.io/learningapp-data/data2.json"
+        let urlString = "https://emkinter.github.io/Learning-App/Data/SwiftUIModule.json"
         // Create a url object
         let url = URL(string: urlString)
         guard url != nil else {
