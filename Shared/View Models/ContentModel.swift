@@ -30,7 +30,10 @@ class ContentModel: ObservableObject {
     var styleData: Data?
     // MARK: - Class initialization Method
     init() {
+        // Parse local included JSON data
         getLocalData()
+        // Download remote JSON file and parse data
+        getRemoteData()
     }
     // MARK: - Data methods
     func getLocalData() {
@@ -66,6 +69,39 @@ class ContentModel: ObservableObject {
             // log error
             print("Could not parse style data")
         }
+    }
+    func getRemoteData() {
+        // String path
+        let urlString = "https://emkinter.github.io/learningapp-data/data2.json"
+        // Create a url object
+        let url = URL(string: urlString)
+        guard url != nil else {
+            // Could not find url
+            return
+        }
+        // Create a URLRequest object
+        let request = URLRequest(url: url!)
+        // Get the session and kick of the task
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request) { (data, response, error) in
+            // Check if there's an error
+            guard error == nil else {
+                return
+            }
+            do {
+                // Create JSON decoder
+                let decoder = JSONDecoder()
+                // Decode JSON
+                let modules = try decoder.decode([Module].self, from: data!)
+                // Append parsed module into modules array
+                self.modules += modules
+            }
+            catch {
+                
+            }
+        }
+        // Kick of the data task
+        dataTask.resume()
     }
     // MARK: - Module navigation methods
     func beginModule( moduleId: Int) {
