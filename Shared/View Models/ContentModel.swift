@@ -123,7 +123,18 @@ class ContentModel: ObservableObject {
         }
     }
     func nextQuestion() {
-        
+        //Advance the question index
+        currentQuestionIndex += 1
+        if currentQuestionIndex < currentModule!.test.questions.count {
+            // Set current question
+            currentQuestion = currentModule!.test.questions[currentQuestionIndex]
+            codeText = addStyling(currentQuestion!.content)
+        }
+        else {
+            currentQuestion = nil
+            currentQuestionIndex = 0
+        }
+        //Check the it's withing the range of question
     }
     func hasNextQuestion() -> Bool {
         return (currentQuestionIndex + 1 < currentModule!.test.questions.count)
